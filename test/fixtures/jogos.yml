@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  data: 2014-06-19
+  hora: 2014-06-19 11:18:07
+  fusohorario: MyString
+  mandanteresultado: 1
+  visitanteresultado: 1
+
+two:
+  data: 2014-06-19
+  hora: 2014-06-19 11:18:07
+  fusohorario: MyString
+  mandanteresultado: 1
+  visitanteresultado: 1
