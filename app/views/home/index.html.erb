@@ -2,4 +2,8 @@
 <p>Find me in app/views/home/index.html.erb</p>
 
 
-<% @response %>
+<ul id="teams">
+<% @teams.each do |t| %>
+<li><%= t.name%></li>
+<% end %>
+</ul>
