@@ -34,10 +34,10 @@ namespace :import_data do
             date = game['data']
 
             if Date.parse(date) <= Date.today
-                if Game.where(date: date).size == 0
-                    visitor = Team.where(acronym: game['visitante']).first
-                    principal = Team.where(acronym: game['mandante']).first
-
+                visitor = Team.where(acronym: game['visitante']).first
+                principal = Team.where(acronym: game['mandante']).first
+                
+                if Game.where(visitor: visitor, principal: principal).size == 0
                     g = Game.new(principal: principal, visitor: visitor, principalScore: game['mandanteresultado'], visitorScore: game['vistanteresultado'], date: date, hour: game['hora'], fuso: game['fusohorario'])
                     g.save
                 else

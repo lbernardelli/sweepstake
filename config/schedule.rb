@@ -20,6 +20,5 @@
 # Learn more: http://github.com/javan/whenever
 
 every 1.day, :at => '11:22 pm' do
-
 	rake "import_data:import_games"
 end
